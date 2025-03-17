@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AIAsteroidsWarsBuild/static/css/main.0956acc6.css",
-    "main.js": "/AIAsteroidsWarsBuild/static/js/main.b8fe4e50.js",
+    "main.js": "/AIAsteroidsWarsBuild/static/js/main.de9f46b5.js",
     "static/js/453.11e6e3fe.chunk.js": "/AIAsteroidsWarsBuild/static/js/453.11e6e3fe.chunk.js",
     "index.html": "/AIAsteroidsWarsBuild/index.html",
     "main.0956acc6.css.map": "/AIAsteroidsWarsBuild/static/css/main.0956acc6.css.map",
-    "main.b8fe4e50.js.map": "/AIAsteroidsWarsBuild/static/js/main.b8fe4e50.js.map",
+    "main.de9f46b5.js.map": "/AIAsteroidsWarsBuild/static/js/main.de9f46b5.js.map",
     "453.11e6e3fe.chunk.js.map": "/AIAsteroidsWarsBuild/static/js/453.11e6e3fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0956acc6.css",
-    "static/js/main.b8fe4e50.js"
+    "static/js/main.de9f46b5.js"
   ]
 }
