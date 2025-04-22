@@ -44,7 +44,7 @@ function App() {
   const [isHapticSoft, setIsHapticSoft] = useState(false);
   const [isHapticMedium, setIsHapticMedium] = useState(false);
 
-  const { unityProvider, addEventListener, removeEventListener, loadingProgression, isLoaded  } = useUnityContext({
+  const { unityProvider, addEventListener, removeEventListener, loadingProgression, isLoaded, requestFullscreen } = useUnityContext({
     loaderUrl: "assets/WebGL.loader.js",
     dataUrl: "assets/WebGL.data.unityweb",
     frameworkUrl: "assets/WebGL.framework.js.unityweb",
@@ -91,6 +91,12 @@ function App() {
      };
    }, [addEventListener, removeEventListener, handleHapticSoft]);
 
+   
+   function handleClickEnterFullscreen() {
+       requestFullscreen(true);
+     }
+
+
   return (
     <Fragment >
      <div className="center">
@@ -103,15 +109,16 @@ function App() {
          )}
      </div>
 
-      <Unity
+     <Unity
       style ={{
-        width: "100vw",   // Full viewport width
-        height: "100vh",  // Full viewport height
         position: "absolute",
         top: 0,
         left: 0,
         }}
          unityProvider={unityProvider} />
+
+      <button onClick={handleClickEnterFullscreen}>Enter Fullscreen</button>
+
     </Fragment>
   );
 }
