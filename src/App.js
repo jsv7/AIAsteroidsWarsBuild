@@ -76,34 +76,10 @@ function App() {
      addEventListener("HapticSoft", handleHapticSoft);
      addEventListener("HapticMedium", handleHapticMedium);
 
-
-
-
-     // A function which will update the device pixel ratio of the Unity
-           // Application to match the device pixel ratio of the browser.
-           // const updateDevicePixelRatio = function () {
-           //   setDevicePixelRatio(window.devicePixelRatio);
-           // };
-           // // A media matcher which watches for changes in the device pixel ratio.
-           // const mediaMatcher = window.matchMedia(
-           //   `screen and (resolution: ${devicePixelRatio}dppx)`
-           // );
-           // // Adding an event listener to the media matcher which will update the
-           // // device pixel ratio of the Unity Application when the device pixel
-           // // ratio changes.
-           // mediaMatcher.addEventListener("change", updateDevicePixelRatio);
-
-
-
-
-
      return () => {
        removeEventListener("HapticSoft", handleHapticSoft);
        removeEventListener("HapticMedium", handleHapticMedium);
-
-
-
-       //mediaMatcher.removeEventListener("change", updateDevicePixelRatio);
+       
      };
    }, [addEventListener, removeEventListener, handleHapticSoft,
      //devicePixelRatio
@@ -123,23 +99,18 @@ function App() {
              <p>Loading: {Math.round(loadingProgression * 100)}%</p>
            </div>
          )}
-
+     </div>
 
       <Unity
-      // style ={{
-      //   width: "100vw",   // Full viewport width
-      //   height: "100vh",  // Full viewport height
-      //   position: "absolute",
-      //   top: 0,
-      //   left: 0,
-      //   }}
-      style={{ width: 250, height: 600 }}
-      devicePixelRatio={window.devicePixelRatio}
-         unityProvider={unityProvider}
-
-         />
-
-         </div>
+      style ={{
+        width: "100vw",   // Full viewport width
+        height: "100vh",  // Full viewport height
+        position: "absolute",
+        top: 0,
+        left: 0,
+        }}
+        devicePixelRatio={window.devicePixelRatio}
+         unityProvider={unityProvider} />
     </Fragment>
   );
 }
