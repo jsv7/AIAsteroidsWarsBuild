@@ -1,5 +1,5 @@
 {
-  "homepage": "https://jsv7.github.io/AIAsteroidsWarsBuild/",
+  "homepage": "/",
   "name": "AIAsteroidsWarsBuild",
   "version": "0.1.0",
   "private": true,
@@ -42,9 +42,9 @@
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.0.1",
     "prompts": "^2.4.2",
-    "react": "^19.0.0",
+    "react": "^18.3.1",
     "react-app-polyfill": "^3.0.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^18.3.1",
     "react-loader-spinner": "^6.1.6",
     "react-refresh": "^0.11.0",
     "react-unity-webgl": "^9.8.0",
